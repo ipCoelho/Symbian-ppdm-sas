@@ -1,0 +1,5 @@
+node_modules
+dist
+prisma/migrations
+src/temp
+toDo.txt
