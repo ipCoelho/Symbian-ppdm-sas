@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "9d1f705f-7663-48b7-9b8f-d30d64f04bdc",
+		"name": "Coleção",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18217252"
+	},
+	"item": [
+		{
+			"name": "list users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3131/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3131",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3131/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3131",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Israel Pablo\",\n    \"lastname\": \"Coelho\",\n    \"email\": \"israel@email.com\",\n    \"cel\": \"11954609745\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3131/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3131",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete one user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Israel Pablo\",\n    \"lastname\": \"Coelho\",\n    \"email\": \"israel@email.com\",\n    \"cel\": \"11954609745\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3131/user?id=364a17fe-f39d-48f8-8965-445299a23212",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3131",
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "364a17fe-f39d-48f8-8965-445299a23212"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all users",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Israel Pablo\",\n    \"lastname\": \"Coelho\",\n    \"email\": \"israel@email.com\",\n    \"cel\": \"11954609745\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3131/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3131",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
